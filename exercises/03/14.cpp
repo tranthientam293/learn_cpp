@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	long long n;
+	int even = 0, odd = 0;
+	
+	cin >> n;
+	
+	while (n > 0){
+		int num = n % 10;
+		
+		
+		if (n % 2 == 0){
+			even += num;
+		}else {
+			odd += num;
+		}
+		
+		n /= 10;
+	}
+	
+	cout << even << endl;
+	cout << odd  << endl;
+	return 0;
+}
+
